@@ -43,7 +43,7 @@ employee1 = EmployeeSalary.get_email(
     employee1.email
 )
 
-employee1.calculate_salary()  # ← без присваивания
+employee1.calculate_salary() 
 
 print(employee1.hours)
 print(employee1.email)
