@@ -25,7 +25,7 @@ class EmployeeSalary:
     def calculate_salary(self):
         self.hours = self.hours or (7 - self.rest_days) * 8
         self.salary = self.hours * self.hourly_payment
-        return self
+        return self.salary
     
 employee1 = EmployeeSalary('Evan', None, 2, None)
 
@@ -42,7 +42,8 @@ employee1 = EmployeeSalary.get_email(
     employee1.rest_days,
     employee1.email
 )
-employee1 = employee1.calculate_salary()
+
+employee1.calculate_salary()  # ← без присваивания
 
 print(employee1.hours)
 print(employee1.email)
