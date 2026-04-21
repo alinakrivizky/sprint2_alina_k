@@ -28,9 +28,7 @@ class TotalPoints(PointsForPlace, PointsForMeters):
         return points_from_meters + points_from_place
 
     
-print(TotalPoints.get_points_for_place(10))
 
-print(TotalPoints.get_points_for_meters(10))
 
 print(TotalPoints.get_points_for_place(10))
 print(TotalPoints.get_points_for_meters(10))
